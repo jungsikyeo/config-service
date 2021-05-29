@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file://C:\Users\YJS\IdeaProjects\spring-cloud\native-file-repo
+        git:
+#          uri: file://C:\Users\YJS\IdeaProjects\spring-cloud\git-local-repo
+          uri: https://github.com/jungsikyeo/spring-cloud-config
